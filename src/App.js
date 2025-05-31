@@ -12,7 +12,7 @@ export default class App extends Component {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/menuu" element={<Menuu />} />
-            <Route path="/about" element={<About />} />  {/* Pastikan path-nya sesuai */}
+            <Route path="/about" element={<About />} /> 
             <Route path="/review" element={<Review />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/sukses" element={<Sukses />} />
