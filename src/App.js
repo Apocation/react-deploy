@@ -6,7 +6,7 @@ import { Menuu, Home, About, Review, Contact, Sukses} from './pages';
 export default class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter  basename="/react-deploy">
         <NavbarComponent />
         <main>
           <Routes>

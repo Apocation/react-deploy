@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import 'animate.css';
 
 function About() {
@@ -13,7 +14,7 @@ function About() {
             style={{
               width: '300px',
               height: '300px',
-              backgroundImage: "url('/assets/images/makanan/lontong-opor-ayam.jpg')",
+              backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/makanan/lontong-opor-ayam.jpg)`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
@@ -34,12 +35,12 @@ function About() {
           <p className="lead animate__animated animate__fadeInUp animate__delay-3s">
             Sejak berdiri pada tahun <strong>2025</strong>, kami berkomitmen menyajikan hidangan berkualitas dari bahan-bahan segar.
           </p>
-          <a
-            href="/menuu"
+          <Link
+            to="/menuu"
             className="btn btn-primary mt-3 animate__animated animate__zoomIn animate__delay-4s"
           >
             Lihat Menu Kami
-          </a>
+          </Link>
         </div>
 
       </div>

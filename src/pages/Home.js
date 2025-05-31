@@ -14,7 +14,7 @@ const Home = () => {
     <div
       className="hero-section d-flex align-items-center"
       style={{
-        backgroundImage: "url('/assets/images/hero.jpg')",
+        backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/hero.jpg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         minHeight: '100vh',
